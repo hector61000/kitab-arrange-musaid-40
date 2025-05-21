@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -98,4 +92,25 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.main-title {
+  @apply font-kufi text-heading-primary text-3xl md:text-4xl font-bold text-center my-6;
+}
+
+.section-title {
+  @apply font-kufi text-heading-secondary text-xl md:text-2xl font-bold text-right my-4;
+}
+
+.subsection-title {
+  @apply font-kufi text-heading-tertiary text-lg md:text-xl font-bold text-right my-3;
+}
+
+.regular-paragraph {
+  @apply font-arabic text-base text-right leading-relaxed my-2;
 }

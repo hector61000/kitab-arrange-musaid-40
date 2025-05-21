@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,12 +19,19 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				kufi: ['Noto Kufi Arabic', 'sans-serif'],
+				arabic: ['Amiri', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'heading-primary': '#1A365D', // Dark blue
+				'heading-secondary': '#9B2C2C', // Dark red
+				'heading-tertiary': '#276749', // Green
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
