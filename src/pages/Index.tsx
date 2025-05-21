@@ -12,7 +12,7 @@ const Index = () => {
       <main className="flex-grow py-8 px-4">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto mb-8 text-center rtl">
-            <h1 className="font-kufi text-3xl font-bold text-heading-primary mb-4">منسق المستندات العربية</h1>
+            <h1 className="font-kufi text-3xl font-bold text-heading-primary mb-4">Green of Light</h1>
             <p className="font-arabic text-lg">أداة سهلة الاستخدام لتنسيق المستندات العربية حسب قواعد محددة</p>
           </div>
           

@@ -98,6 +98,7 @@ const DocumentEditor: React.FC = () => {
               placeholder="أدخل نص المستند هنا..."
               className="min-h-[400px] font-arabic"
               dir="rtl"
+              maxLength={500000} // تحديث حد الأحرف إلى 500 ألف
             />
           </Card>
         </TabsContent>
