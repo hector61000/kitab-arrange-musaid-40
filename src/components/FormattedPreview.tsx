@@ -1,10 +1,19 @@
+
 import React from 'react';
 
 interface FormattedPreviewProps {
   text: string;
+  mainTitleColor: string;
+  sectionTitleColor: string;
+  subsectionTitleColor: string;
 }
 
-const FormattedPreview: React.FC<FormattedPreviewProps> = ({ text }) => {
+const FormattedPreview: React.FC<FormattedPreviewProps> = ({ 
+  text, 
+  mainTitleColor, 
+  sectionTitleColor, 
+  subsectionTitleColor 
+}) => {
   if (!text.trim()) {
     return (
       <div className="text-center text-gray-400 py-10">
@@ -45,11 +54,11 @@ const FormattedPreview: React.FC<FormattedPreviewProps> = ({ text }) => {
     
     switch (type) {
       case 'main-title':
-        return <h1 key={index} className="main-title">{line}</h1>;
+        return <h1 key={index} className="main-title" style={{ color: mainTitleColor }}>{line}</h1>;
       case 'section-title':
-        return <h2 key={index} className="section-title">{line}</h2>;
+        return <h2 key={index} className="section-title" style={{ color: sectionTitleColor }}>{line}</h2>;
       case 'subsection-title':
-        return <h3 key={index} className="subsection-title">{line}</h3>;
+        return <h3 key={index} className="subsection-title" style={{ color: subsectionTitleColor }}>{line}</h3>;
       case 'paragraph':
         return <p key={index} className="regular-paragraph">{line}</p>;
       case 'empty':
